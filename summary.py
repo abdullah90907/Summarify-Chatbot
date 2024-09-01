@@ -4,7 +4,7 @@ from youtube_transcript_api import YouTubeTranscriptApi
 import re
 
 # Initialize summarization pipeline
-summarizer = pipeline("summarization", model="facebook/bart-large-cnn")
+summarizer = pipeline("summarization", model="t5-small")
 
 # Helper function to extract text from a YouTube video transcript
 def get_youtube_transcript(url):
